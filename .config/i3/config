@@ -209,6 +209,7 @@ bindsym XF86MonBrightnessDown exec --no-startup-id xbacklight -dec 5
 bindsym Print exec --no-startup-id flameshot gui
 # 设置快捷键来显示隐藏 polybar
 bindsym $mod+b exec --no-startup-id polybar-msg cmd toggle 
+
 ########################## 自启动
 # 窗口透明提供程序
 exec_always --no-startup-id picom
@@ -228,4 +229,6 @@ exec --no-startup-id xinput disable 'DELL086F:00 06CB:7E92 Touchpad'
 exec --no-startup-id flameshot
 # proxy
 exec --no-startup-id ~/.config/clash/launch.sh
+# 词典
+exec --no-startup-id goldendict
 
