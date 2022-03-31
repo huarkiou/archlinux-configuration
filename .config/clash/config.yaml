@@ -1,7 +1,7 @@
 #---------------------------------------------------#
-## 更新：2022-01-02 10:27:44
+## 更新：2022-03-30 09:13:51
 ## 感谢：https://github.com/Hackl0us/SS-Rule-Snippet
-## 链接：https://d.cloudso.club/link/YqokgHrfZ4Bbdxac?clash=1
+## 链接：https://d.cloudso.club/link/Dh4bP13pzj9GjIXz?clash=1
 #---------------------------------------------------#
 
 # HTTP 代理端口
@@ -14,14 +14,14 @@ socks-port: 7891
 redir-port: 7892 
 
 # 允许局域网的连接
-allow-lan: false
+allow-lan: true
 
 # 规则模式：Rule（规则） / Global（全局代理）/ Direct（全局直连）
 mode: rule
 
 # 设置日志输出级别 (默认级别：silent，即不输出任何内容，以避免因日志内容过大而导致程序内存溢出）。
 # 5 个级别：silent / info / warning / error / debug。级别越高日志输出量越大，越倾向于调试，若需要请自行开启。
-log-level: info
+log-level: silent
 # Clash 的 RESTful API
 external-controller: '0.0.0.0:9090'
 
@@ -34,88 +34,96 @@ secret: ''
 
 
 proxies:
-  - {"name":"🇭🇰 香港 | 01 | U1","type":"vmess","server":"u3.amazonfeed.net","port":11101,"uuid":"fa300f0c-7578-3cb8-9d67-5b6ec2f024d1","alterId":2,"cipher":"auto","udp":true,"network":"ws","ws-path":"/v2ray","ws-headers":{"Host":"u3.amazonfeed.net"}}
-  - {"name":"🇭🇰 香港 | 02 | U4","type":"vmess","server":"sh1.v0.amazonfeed.net","port":11102,"uuid":"fa300f0c-7578-3cb8-9d67-5b6ec2f024d1","alterId":2,"cipher":"auto","udp":true,"network":"ws","ws-path":"/v2ray","ws-headers":{"Host":"sh1.v0.amazonfeed.net"}}
-  - {"name":"🇭🇰 香港 | 03 | U1","type":"vmess","server":"u1.amazonfeed.net","port":11106,"uuid":"fa300f0c-7578-3cb8-9d67-5b6ec2f024d1","alterId":2,"cipher":"auto","udp":true,"network":"ws","ws-path":"/v2ray","ws-headers":{"Host":"u1.amazonfeed.net"}}
-  - {"name":"🇭🇰 香港 | 04 | T3","type":"vmess","server":"t3.amazonfeed.net","port":2103,"uuid":"fa300f0c-7578-3cb8-9d67-5b6ec2f024d1","alterId":2,"cipher":"auto","udp":true,"network":"ws","ws-path":"/v2ray","ws-headers":{"Host":"t3.amazonfeed.net"}}
-  - {"name":"🇭🇰 香港 | 05 | U4","type":"vmess","server":"u4.amazonfeed.net","port":11802,"uuid":"fa300f0c-7578-3cb8-9d67-5b6ec2f024d1","alterId":2,"cipher":"auto","udp":true,"network":"ws","ws-path":"/v2ray","ws-headers":{"Host":"u4.amazonfeed.net"}}
-  - {"name":"🇭🇰 香港 | 06 | T3","type":"vmess","server":"t3.amazonfeed.net","port":11105,"uuid":"fa300f0c-7578-3cb8-9d67-5b6ec2f024d1","alterId":2,"cipher":"auto","udp":true,"network":"ws","ws-path":"/v2ray","ws-headers":{"Host":"t3.amazonfeed.net"}}
-  - {"name":"🇭🇰 香港 | 07 | T1","type":"vmess","server":"u4.amazonfeed.net","port":3106,"uuid":"fa300f0c-7578-3cb8-9d67-5b6ec2f024d1","alterId":2,"cipher":"auto","udp":true,"network":"ws","ws-path":"/v2ray","ws-headers":{"Host":"u4.amazonfeed.net"}}
-  - {"name":"🇭🇰 香港 | 08 | T1","type":"vmess","server":"t3.amazonfeed.net","port":11104,"uuid":"fa300f0c-7578-3cb8-9d67-5b6ec2f024d1","alterId":2,"cipher":"auto","udp":true,"network":"ws","ws-path":"/v2ray","ws-headers":{"Host":"t3.amazonfeed.net"}}
-  - {"name":"🇨🇳 台湾 | V1 | 01","type":"vmess","server":"gz.cm1.amazonfeed.net","port":2602,"uuid":"fa300f0c-7578-3cb8-9d67-5b6ec2f024d1","alterId":2,"cipher":"auto","udp":true,"network":"ws","ws-path":"/v2ray","ws-headers":{"Host":"gz.cm1.amazonfeed.net"}}
-  - {"name":"🇨🇳 台湾 | V1 | 02\t","type":"vmess","server":"gz.cm1.amazonfeed.net","port":31093,"uuid":"fa300f0c-7578-3cb8-9d67-5b6ec2f024d1","alterId":2,"cipher":"auto","udp":true,"network":"ws","ws-path":"/v7aea","ws-headers":{"Host":"gz.cm1.amazonfeed.net"}}
-  - {"name":"🇯🇵 日本 | 01 | T3","type":"vmess","server":"t3.amazonfeed.net","port":11034,"uuid":"fa300f0c-7578-3cb8-9d67-5b6ec2f024d1","alterId":2,"cipher":"auto","udp":true,"network":"ws","ws-path":"/v2ray","ws-headers":{"Host":"t3.amazonfeed.net"}}
-  - {"name":"🇯🇵 日本 | 02 | U1","type":"vmess","server":"u1.amazonfeed.net","port":2301,"uuid":"fa300f0c-7578-3cb8-9d67-5b6ec2f024d1","alterId":2,"cipher":"auto","udp":true,"network":"ws","ws-path":"/v2ray","ws-headers":{"Host":"u1.amazonfeed.net"}}
-  - {"name":"🇯🇵 日本 | 03 | T3","type":"vmess","server":"t3.amazonfeed.net","port":3301,"uuid":"fa300f0c-7578-3cb8-9d67-5b6ec2f024d1","alterId":2,"cipher":"auto","udp":true,"network":"ws","ws-path":"/v2ray","ws-headers":{"Host":"t3.amazonfeed.net"}}
-  - {"name":"🇯🇵 日本 | 04 | U4","type":"vmess","server":"u4.amazonfeed.net","port":1031,"uuid":"fa300f0c-7578-3cb8-9d67-5b6ec2f024d1","alterId":2,"cipher":"auto","udp":true,"network":"ws","ws-path":"/v2ray","ws-headers":{"Host":"u4.amazonfeed.net"}}
-  - {"name":"🇯🇵 日本 | 05 | U4","type":"vmess","server":"u4.amazonfeed.net","port":1032,"uuid":"fa300f0c-7578-3cb8-9d67-5b6ec2f024d1","alterId":2,"cipher":"auto","udp":true,"network":"ws","ws-path":"/v2ray","ws-headers":{"Host":"u4.amazonfeed.net"}}
-  - {"name":"🇸🇬 狮城 | 01 | U1","type":"vmess","server":"u1.amazonfeed.net","port":11205,"uuid":"fa300f0c-7578-3cb8-9d67-5b6ec2f024d1","alterId":2,"cipher":"auto","udp":true,"network":"ws","ws-path":"/v2ray","ws-headers":{"Host":"u1.amazonfeed.net"}}
-  - {"name":"🇸🇬 狮城 | 02 | U4","type":"vmess","server":"u4.amazonfeed.net","port":11206,"uuid":"fa300f0c-7578-3cb8-9d67-5b6ec2f024d1","alterId":2,"cipher":"auto","udp":true,"network":"ws","ws-path":"/v2ray","ws-headers":{"Host":"u4.amazonfeed.net"}}
-  - {"name":"🇸🇬 狮城 | 03 | T3","type":"vmess","server":"t3.amazonfeed.net","port":2201,"uuid":"fa300f0c-7578-3cb8-9d67-5b6ec2f024d1","alterId":2,"cipher":"auto","udp":true,"network":"ws","ws-path":"/v2ray","ws-headers":{"Host":"t3.amazonfeed.net"}}
-  - {"name":"🇸🇬 狮城 | 04 | T3","type":"vmess","server":"t3.amazonfeed.net","port":3201,"uuid":"fa300f0c-7578-3cb8-9d67-5b6ec2f024d1","alterId":2,"cipher":"auto","udp":true,"network":"ws","ws-path":"/v2ray","ws-headers":{"Host":"t3.amazonfeed.net"}}
-  - {"name":"🇺🇲 美国 | 01 | T3","type":"vmess","server":"t3.amazonfeed.net","port":11503,"uuid":"fa300f0c-7578-3cb8-9d67-5b6ec2f024d1","alterId":2,"cipher":"auto","udp":true,"network":"ws","ws-path":"/v2ray","ws-headers":{"Host":"t3.amazonfeed.net"}}
-  - {"name":"🇺🇲 美国 | 02 | U1","type":"vmess","server":"u1.amazonfeed.net","port":11502,"uuid":"fa300f0c-7578-3cb8-9d67-5b6ec2f024d1","alterId":2,"cipher":"auto","udp":true,"network":"ws","ws-path":"/v2ray","ws-headers":{"Host":"u1.amazonfeed.net"}}
-  - {"name":"🇺🇲 美国 | 03 | T1","type":"vmess","server":"a1.amazonfeed.net","port":2501,"uuid":"fa300f0c-7578-3cb8-9d67-5b6ec2f024d1","alterId":2,"cipher":"auto","udp":true,"network":"ws","ws-path":"/v2ray","ws-headers":{"Host":"a1.amazonfeed.net"}}
-  - {"name":"🇺🇲 美国 | 04 | U4","type":"vmess","server":"u4.amazonfeed.net","port":11501,"uuid":"fa300f0c-7578-3cb8-9d67-5b6ec2f024d1","alterId":2,"cipher":"auto","udp":true,"network":"ws","ws-path":"/v2ray","ws-headers":{"Host":"u4.amazonfeed.net"}}
-  - {"name":"🇰🇷 韩国 | 01 | T3","type":"vmess","server":"t3.amazonfeed.net","port":11401,"uuid":"fa300f0c-7578-3cb8-9d67-5b6ec2f024d1","alterId":2,"cipher":"auto","udp":true,"network":"ws","ws-path":"/v2ray","ws-headers":{"Host":"t3.amazonfeed.net"}}
-  - {"name":"🇰🇷 韩国 | 02 | U4","type":"vmess","server":"u4.amazonfeed.net","port":1402,"uuid":"fa300f0c-7578-3cb8-9d67-5b6ec2f024d1","alterId":2,"cipher":"auto","udp":true,"network":"ws","ws-path":"/v2ray","ws-headers":{"Host":"u4.amazonfeed.net"}}
-  - {"name":"🇷🇺 俄罗斯 | 1 | U2","type":"vmess","server":"sh1.v0.amazonfeed.net","port":51908,"uuid":"fa300f0c-7578-3cb8-9d67-5b6ec2f024d1","alterId":2,"cipher":"auto","udp":true,"network":"ws","ws-path":"/v2ray","ws-headers":{"Host":"sh1.v0.amazonfeed.net"}}
-  - {"name":"🇵🇭 菲律宾 | 1 | T2","type":"vmess","server":"a1.amazonfeed.net","port":11907,"uuid":"fa300f0c-7578-3cb8-9d67-5b6ec2f024d1","alterId":2,"cipher":"auto","udp":true,"network":"ws","ws-path":"/v2ray","ws-headers":{"Host":"a1.amazonfeed.net"}}
-  - {"name":"🇮🇳 印度 | 01 | U4","type":"vmess","server":"u4.amazonfeed.net","port":11901,"uuid":"fa300f0c-7578-3cb8-9d67-5b6ec2f024d1","alterId":2,"cipher":"auto","udp":true,"network":"ws","ws-path":"/v2ray","ws-headers":{"Host":"u4.amazonfeed.net"}}
-  - {"name":"🇹🇭 泰国 | 01 | T1","type":"vmess","server":"a1.amazonfeed.net","port":11906,"uuid":"fa300f0c-7578-3cb8-9d67-5b6ec2f024d1","alterId":2,"cipher":"auto","udp":true,"network":"ws","ws-path":"/v2ray","ws-headers":{"Host":"a1.amazonfeed.net"}}
-  - {"name":"🇬🇧 英国 | 01 | T1","type":"vmess","server":"a1.amazonfeed.net","port":11903,"uuid":"fa300f0c-7578-3cb8-9d67-5b6ec2f024d1","alterId":2,"cipher":"auto","udp":true,"network":"ws","ws-path":"/v2ray","ws-headers":{"Host":"a1.amazonfeed.net"}}
-  - {"name":"🇩🇪 德国 | 01 | U2","type":"vmess","server":"a1.amazonfeed.net","port":51909,"uuid":"fa300f0c-7578-3cb8-9d67-5b6ec2f024d1","alterId":2,"cipher":"auto","udp":true,"network":"ws","ws-path":"/v7aea","ws-headers":{"Host":"a1.amazonfeed.net"}}
-  - {"name":"🇨🇦 加拿大 | 1 | U4","type":"vmess","server":"sh1.v0.amazonfeed.net","port":48312,"uuid":"fa300f0c-7578-3cb8-9d67-5b6ec2f024d1","alterId":2,"cipher":"auto","udp":true,"network":"ws","ws-path":"/v7aea","ws-headers":{"Host":"sh1.v0.amazonfeed.net"}}
-  - {"name":"🇦🇺 澳洲 | 01 | U4","type":"vmess","server":"u4.amazonfeed.net","port":37111,"uuid":"fa300f0c-7578-3cb8-9d67-5b6ec2f024d1","alterId":2,"cipher":"auto","udp":true,"network":"ws","ws-path":"/v7aea","ws-headers":{"Host":"u4.amazonfeed.net"}}
-  - {"name":"🇵🇰 巴基斯坦 | 01 | U4","type":"vmess","server":"u4.amazonfeed.net","port":37115,"uuid":"fa300f0c-7578-3cb8-9d67-5b6ec2f024d1","alterId":2,"cipher":"auto","udp":true,"network":"ws","ws-path":"/v7aea","ws-headers":{"Host":"u4.amazonfeed.net"}}
-  - {"name":"🇨🇱 智利  | 01 | U4","type":"vmess","server":"u4.amazonfeed.net","port":37143,"uuid":"fa300f0c-7578-3cb8-9d67-5b6ec2f024d1","alterId":2,"cipher":"auto","udp":true,"network":"ws","ws-path":"/v7aea","ws-headers":{"Host":"u4.amazonfeed.net"}}
-  - {"name":"🇹🇷 土耳其 | 1 | U4","type":"vmess","server":"u4.amazonfeed.net","port":11905,"uuid":"fa300f0c-7578-3cb8-9d67-5b6ec2f024d1","alterId":2,"cipher":"auto","udp":true,"network":"ws","ws-path":"/v2ray","ws-headers":{"Host":"u4.amazonfeed.net"}}
-  - {"name":"🇧🇷 巴西 | 01 | T1","type":"vmess","server":"a1.amazonfeed.net","port":11902,"uuid":"fa300f0c-7578-3cb8-9d67-5b6ec2f024d1","alterId":2,"cipher":"auto","udp":true,"network":"ws","ws-path":"/v2ray","ws-headers":{"Host":"a1.amazonfeed.net"}}
-  - {"name":"🇦🇷 阿根廷 | 1 | T2","type":"vmess","server":"a1.amazonfeed.net","port":11904,"uuid":"fa300f0c-7578-3cb8-9d67-5b6ec2f024d1","alterId":2,"cipher":"auto","udp":true,"network":"ws","ws-path":"/v2ray","ws-headers":{"Host":"a1.amazonfeed.net"}}
+  - {"name":"🇭🇰 香港 | V1 | 01","type":"vmess","server":"2.acetace.com","port":11101,"uuid":"64467a80-08ec-3b2c-a096-71ed64473a4f","alterId":0,"cipher":"auto","udp":true,"network":"ws","ws-path":"/v2ray","ws-headers":{"Host":"2.acetace.com"},"ws-opts":{"path":"/v2ray","headers":{"Host":"2.acetace.com"}}}
+  - {"name":"🇭🇰 香港 | V1 | 02","type":"vmess","server":"a1.amazonfead.org","port":11102,"uuid":"64467a80-08ec-3b2c-a096-71ed64473a4f","alterId":0,"cipher":"auto","udp":true,"network":"ws","ws-path":"/v2ray","ws-headers":{"Host":"a1.amazonfead.org"},"ws-opts":{"path":"/v2ray","headers":{"Host":"a1.amazonfead.org"}}}
+  - {"name":"🇭🇰 香港 | V1 | 03","type":"vmess","server":"u1.amazonfead.org","port":11106,"uuid":"64467a80-08ec-3b2c-a096-71ed64473a4f","alterId":0,"cipher":"auto","udp":true,"network":"ws","ws-path":"/v2ray","ws-headers":{"Host":"u1.amazonfead.org"},"ws-opts":{"path":"/v2ray","headers":{"Host":"u1.amazonfead.org"}}}
+  - {"name":"🇭🇰 香港 | V1 | 04","type":"vmess","server":"t3.amazonfead.org","port":2103,"uuid":"64467a80-08ec-3b2c-a096-71ed64473a4f","alterId":0,"cipher":"auto","udp":true,"network":"ws","ws-path":"/v2ray","ws-headers":{"Host":"t3.amazonfead.org"},"ws-opts":{"path":"/v2ray","headers":{"Host":"t3.amazonfead.org"}}}
+  - {"name":"🇭🇰 香港 | V1 | 05","type":"vmess","server":"u4.amazonfead.org","port":11802,"uuid":"64467a80-08ec-3b2c-a096-71ed64473a4f","alterId":0,"cipher":"auto","udp":true,"network":"ws","ws-path":"/v2ray","ws-headers":{"Host":"u4.amazonfead.org"},"ws-opts":{"path":"/v2ray","headers":{"Host":"u4.amazonfead.org"}}}
+  - {"name":"🇭🇰 香港 | V1 | 06","type":"vmess","server":"t3.amazonfead.org","port":11105,"uuid":"64467a80-08ec-3b2c-a096-71ed64473a4f","alterId":0,"cipher":"auto","udp":true,"network":"ws","ws-path":"/v2ray","ws-headers":{"Host":"t3.amazonfead.org"},"ws-opts":{"path":"/v2ray","headers":{"Host":"t3.amazonfead.org"}}}
+  - {"name":"🇭🇰 香港 | V1 | 07","type":"vmess","server":"u4.amazonfead.org","port":3106,"uuid":"64467a80-08ec-3b2c-a096-71ed64473a4f","alterId":0,"cipher":"auto","udp":true,"network":"ws","ws-path":"/v2ray","ws-headers":{"Host":"u4.amazonfead.org"},"ws-opts":{"path":"/v2ray","headers":{"Host":"u4.amazonfead.org"}}}
+  - {"name":"🇭🇰 香港 | V1 | 08","type":"vmess","server":"t3.amazonfead.org","port":11104,"uuid":"64467a80-08ec-3b2c-a096-71ed64473a4f","alterId":0,"cipher":"auto","udp":true,"network":"ws","ws-path":"/v2ray","ws-headers":{"Host":"t3.amazonfead.org"},"ws-opts":{"path":"/v2ray","headers":{"Host":"t3.amazonfead.org"}}}
+  - {"name":"🇨🇳 台湾 | V1 | 01","type":"vmess","server":"t3.amazonfead.org","port":2602,"uuid":"64467a80-08ec-3b2c-a096-71ed64473a4f","alterId":0,"cipher":"auto","udp":true,"network":"ws","ws-path":"/v2ray","ws-headers":{"Host":"t3.amazonfead.org"},"ws-opts":{"path":"/v2ray","headers":{"Host":"t3.amazonfead.org"}}}
+  - {"name":"🇨🇳 台湾 | V1 | 02\t","type":"vmess","server":"2.acetace.com","port":31093,"uuid":"64467a80-08ec-3b2c-a096-71ed64473a4f","alterId":0,"cipher":"auto","udp":true,"network":"ws","ws-path":"/v7aea","ws-headers":{"Host":"2.acetace.com"},"ws-opts":{"path":"/v7aea","headers":{"Host":"2.acetace.com"}}}
+  - {"name":"🇯🇵 日本 | V1 | 01","type":"vmess","server":"t3.amazonfead.org","port":11034,"uuid":"64467a80-08ec-3b2c-a096-71ed64473a4f","alterId":0,"cipher":"auto","udp":true,"network":"ws","ws-path":"/v2ray","ws-headers":{"Host":"t3.amazonfead.org"},"ws-opts":{"path":"/v2ray","headers":{"Host":"t3.amazonfead.org"}}}
+  - {"name":"🇯🇵 日本 | V1 | 02","type":"vmess","server":"u1.amazonfead.org","port":2301,"uuid":"64467a80-08ec-3b2c-a096-71ed64473a4f","alterId":0,"cipher":"auto","udp":true,"network":"ws","ws-path":"/v2ray","ws-headers":{"Host":"u1.amazonfead.org"},"ws-opts":{"path":"/v2ray","headers":{"Host":"u1.amazonfead.org"}}}
+  - {"name":"🇯🇵 日本 | V1 | 03","type":"vmess","server":"t3.amazonfead.org","port":3301,"uuid":"64467a80-08ec-3b2c-a096-71ed64473a4f","alterId":0,"cipher":"auto","udp":true,"network":"ws","ws-path":"/v2ray","ws-headers":{"Host":"t3.amazonfead.org"},"ws-opts":{"path":"/v2ray","headers":{"Host":"t3.amazonfead.org"}}}
+  - {"name":"🇯🇵 日本 | V1 | 04","type":"vmess","server":"u4.amazonfead.org","port":1031,"uuid":"64467a80-08ec-3b2c-a096-71ed64473a4f","alterId":0,"cipher":"auto","udp":true,"network":"ws","ws-path":"/v2ray","ws-headers":{"Host":"u4.amazonfead.org"},"ws-opts":{"path":"/v2ray","headers":{"Host":"u4.amazonfead.org"}}}
+  - {"name":"🇯🇵 日本 | V1 | 05","type":"vmess","server":"2.acetace.com","port":1032,"uuid":"64467a80-08ec-3b2c-a096-71ed64473a4f","alterId":0,"cipher":"auto","udp":true,"network":"ws","ws-path":"/v2ray","ws-headers":{"Host":"2.acetace.com"},"ws-opts":{"path":"/v2ray","headers":{"Host":"2.acetace.com"}}}
+  - {"name":"🇸🇬 新加坡 | V1 | 01","type":"vmess","server":"u1.amazonfead.org","port":11205,"uuid":"64467a80-08ec-3b2c-a096-71ed64473a4f","alterId":0,"cipher":"auto","udp":true,"network":"ws","ws-path":"/v2ray","ws-headers":{"Host":"u1.amazonfead.org"},"ws-opts":{"path":"/v2ray","headers":{"Host":"u1.amazonfead.org"}}}
+  - {"name":"🇸🇬 新加坡 | V1 | 02","type":"vmess","server":"t3.amazonfead.org","port":11206,"uuid":"64467a80-08ec-3b2c-a096-71ed64473a4f","alterId":0,"cipher":"auto","udp":true,"network":"ws","ws-path":"/v2ray","ws-headers":{"Host":"t3.amazonfead.org"},"ws-opts":{"path":"/v2ray","headers":{"Host":"t3.amazonfead.org"}}}
+  - {"name":"🇸🇬 新加坡 | V1 | 03","type":"vmess","server":"t3.amazonfead.org","port":2201,"uuid":"64467a80-08ec-3b2c-a096-71ed64473a4f","alterId":0,"cipher":"auto","udp":true,"network":"ws","ws-path":"/v2ray","ws-headers":{"Host":"t3.amazonfead.org"},"ws-opts":{"path":"/v2ray","headers":{"Host":"t3.amazonfead.org"}}}
+  - {"name":"🇸🇬 新加坡 | V1 | 04","type":"vmess","server":"t3.amazonfead.org","port":3201,"uuid":"64467a80-08ec-3b2c-a096-71ed64473a4f","alterId":0,"cipher":"auto","udp":true,"network":"ws","ws-path":"/v2ray","ws-headers":{"Host":"t3.amazonfead.org"},"ws-opts":{"path":"/v2ray","headers":{"Host":"t3.amazonfead.org"}}}
+  - {"name":"🇺🇲 美国 | V1 | 01","type":"vmess","server":"t3.amazonfead.org","port":11503,"uuid":"64467a80-08ec-3b2c-a096-71ed64473a4f","alterId":0,"cipher":"auto","udp":true,"network":"ws","ws-path":"/v2ray","ws-headers":{"Host":"t3.amazonfead.org"},"ws-opts":{"path":"/v2ray","headers":{"Host":"t3.amazonfead.org"}}}
+  - {"name":"🇺🇲 美国 | V1 | 02","type":"vmess","server":"u1.amazonfead.org","port":11502,"uuid":"64467a80-08ec-3b2c-a096-71ed64473a4f","alterId":0,"cipher":"auto","udp":true,"network":"ws","ws-path":"/v2ray","ws-headers":{"Host":"u1.amazonfead.org"},"ws-opts":{"path":"/v2ray","headers":{"Host":"u1.amazonfead.org"}}}
+  - {"name":"🇺🇲 美国 | V1 | 03","type":"vmess","server":"a1.amazonfead.org","port":2501,"uuid":"64467a80-08ec-3b2c-a096-71ed64473a4f","alterId":0,"cipher":"auto","udp":true,"network":"ws","ws-path":"/v2ray","ws-headers":{"Host":"a1.amazonfead.org"},"ws-opts":{"path":"/v2ray","headers":{"Host":"a1.amazonfead.org"}}}
+  - {"name":"🇺🇲 美国 | V1 | 04","type":"vmess","server":"u4.amazonfead.org","port":11501,"uuid":"64467a80-08ec-3b2c-a096-71ed64473a4f","alterId":0,"cipher":"auto","udp":true,"network":"ws","ws-path":"/v2ray","ws-headers":{"Host":"u4.amazonfead.org"},"ws-opts":{"path":"/v2ray","headers":{"Host":"u4.amazonfead.org"}}}
+  - {"name":"🇰🇷 韩国 | V1 | 01","type":"vmess","server":"t3.amazonfead.org","port":11401,"uuid":"64467a80-08ec-3b2c-a096-71ed64473a4f","alterId":0,"cipher":"auto","udp":true,"network":"ws","ws-path":"/v2ray","ws-headers":{"Host":"t3.amazonfead.org"},"ws-opts":{"path":"/v2ray","headers":{"Host":"t3.amazonfead.org"}}}
+  - {"name":"🇰🇷 韩国 | V1 | 02","type":"vmess","server":"u4.amazonfead.org","port":1402,"uuid":"64467a80-08ec-3b2c-a096-71ed64473a4f","alterId":0,"cipher":"auto","udp":true,"network":"ws","ws-path":"/v2ray","ws-headers":{"Host":"u4.amazonfead.org"},"ws-opts":{"path":"/v2ray","headers":{"Host":"u4.amazonfead.org"}}}
+  - {"name":"🇷🇺 俄罗斯 | V1 | 01","type":"vmess","server":"sh1.v0.amazonfead.org","port":51908,"uuid":"64467a80-08ec-3b2c-a096-71ed64473a4f","alterId":0,"cipher":"auto","udp":true,"network":"ws","ws-path":"/v2ray","ws-headers":{"Host":"sh1.v0.amazonfead.org"},"ws-opts":{"path":"/v2ray","headers":{"Host":"sh1.v0.amazonfead.org"}}}
+  - {"name":"🇵🇭 菲律宾 | V1 | 01","type":"vmess","server":"a1.amazonfead.org","port":11907,"uuid":"64467a80-08ec-3b2c-a096-71ed64473a4f","alterId":0,"cipher":"auto","udp":true,"network":"ws","ws-path":"/v2ray","ws-headers":{"Host":"a1.amazonfead.org"},"ws-opts":{"path":"/v2ray","headers":{"Host":"a1.amazonfead.org"}}}
+  - {"name":"🇮🇳 印度 | V1 | 01","type":"vmess","server":"u4.amazonfead.org","port":11901,"uuid":"64467a80-08ec-3b2c-a096-71ed64473a4f","alterId":0,"cipher":"auto","udp":true,"network":"ws","ws-path":"/v2ray","ws-headers":{"Host":"u4.amazonfead.org"},"ws-opts":{"path":"/v2ray","headers":{"Host":"u4.amazonfead.org"}}}
+  - {"name":"🇹🇭 泰国 | V1 | 01","type":"vmess","server":"a1.amazonfead.org","port":11906,"uuid":"64467a80-08ec-3b2c-a096-71ed64473a4f","alterId":0,"cipher":"auto","udp":true,"network":"ws","ws-path":"/v2ray","ws-headers":{"Host":"a1.amazonfead.org"},"ws-opts":{"path":"/v2ray","headers":{"Host":"a1.amazonfead.org"}}}
+  - {"name":"🇬🇧 英国 | V1 | 01","type":"vmess","server":"a1.amazonfead.org","port":11903,"uuid":"64467a80-08ec-3b2c-a096-71ed64473a4f","alterId":0,"cipher":"auto","udp":true,"network":"ws","ws-path":"/v2ray","ws-headers":{"Host":"a1.amazonfead.org"},"ws-opts":{"path":"/v2ray","headers":{"Host":"a1.amazonfead.org"}}}
+  - {"name":"🇩🇪 德国 | V1 | 01","type":"vmess","server":"a1.amazonfead.org","port":51909,"uuid":"64467a80-08ec-3b2c-a096-71ed64473a4f","alterId":0,"cipher":"auto","udp":true,"network":"ws","ws-path":"/v7aea","ws-headers":{"Host":"a1.amazonfead.org"},"ws-opts":{"path":"/v7aea","headers":{"Host":"a1.amazonfead.org"}}}
+  - {"name":"🇨🇦 加拿大 | V1 | 01","type":"vmess","server":"2.acetace.com","port":48312,"uuid":"64467a80-08ec-3b2c-a096-71ed64473a4f","alterId":0,"cipher":"auto","udp":true,"network":"ws","ws-path":"/v7aea","ws-headers":{"Host":"2.acetace.com"},"ws-opts":{"path":"/v7aea","headers":{"Host":"2.acetace.com"}}}
+  - {"name":"🇦🇺 澳大利亚 | V1 | 01","type":"vmess","server":"u4.amazonfead.org","port":37111,"uuid":"64467a80-08ec-3b2c-a096-71ed64473a4f","alterId":0,"cipher":"auto","udp":true,"network":"ws","ws-path":"/v7aea","ws-headers":{"Host":"u4.amazonfead.org"},"ws-opts":{"path":"/v7aea","headers":{"Host":"u4.amazonfead.org"}}}
+  - {"name":"🇵🇰 巴基斯坦 | V1 | 01","type":"vmess","server":"2.acetace.com","port":37115,"uuid":"64467a80-08ec-3b2c-a096-71ed64473a4f","alterId":0,"cipher":"auto","udp":true,"network":"ws","ws-path":"/v7aea","ws-headers":{"Host":"2.acetace.com"},"ws-opts":{"path":"/v7aea","headers":{"Host":"2.acetace.com"}}}
+  - {"name":"🇨🇱 智利  | V1 | 01","type":"vmess","server":"u4.amazonfead.org","port":37143,"uuid":"64467a80-08ec-3b2c-a096-71ed64473a4f","alterId":0,"cipher":"auto","udp":true,"network":"ws","ws-path":"/v7aea","ws-headers":{"Host":"u4.amazonfead.org"},"ws-opts":{"path":"/v7aea","headers":{"Host":"u4.amazonfead.org"}}}
+  - {"name":"🇹🇷 土耳其 | V1 | 01","type":"vmess","server":"u4.amazonfead.org","port":11905,"uuid":"64467a80-08ec-3b2c-a096-71ed64473a4f","alterId":0,"cipher":"auto","udp":true,"network":"ws","ws-path":"/v2ray","ws-headers":{"Host":"u4.amazonfead.org"},"ws-opts":{"path":"/v2ray","headers":{"Host":"u4.amazonfead.org"}}}
+  - {"name":"🇧🇷 巴西 | V1 | 01","type":"vmess","server":"a1.amazonfead.org","port":11902,"uuid":"64467a80-08ec-3b2c-a096-71ed64473a4f","alterId":0,"cipher":"auto","udp":true,"network":"ws","ws-path":"/v2ray","ws-headers":{"Host":"a1.amazonfead.org"},"ws-opts":{"path":"/v2ray","headers":{"Host":"a1.amazonfead.org"}}}
+  - {"name":"🇦🇷 阿根廷 | V1 | 01","type":"vmess","server":"a1.amazonfead.org","port":11904,"uuid":"64467a80-08ec-3b2c-a096-71ed64473a4f","alterId":0,"cipher":"auto","udp":true,"network":"ws","ws-path":"/v2ray","ws-headers":{"Host":"a1.amazonfead.org"},"ws-opts":{"path":"/v2ray","headers":{"Host":"a1.amazonfead.org"}}}
+  - {"name":"🇸🇬 试用 | 新加坡 | 01 | 限 20 Mbs","type":"vmess","server":"sh1.v0.amazonfead.org","port":10001,"uuid":"64467a80-08ec-3b2c-a096-71ed64473a4f","alterId":0,"cipher":"auto","udp":true,"network":"ws","ws-path":"/v2ray","ws-headers":{"Host":"sh1.v0.amazonfead.org"},"ws-opts":{"path":"/v2ray","headers":{"Host":"sh1.v0.amazonfead.org"}}}
+  - {"name":"🇸🇬 试用 | 新加坡 | 02 | 限 20 Mbs","type":"vmess","server":"sh1.v0.amazonfead.org","port":10004,"uuid":"64467a80-08ec-3b2c-a096-71ed64473a4f","alterId":0,"cipher":"auto","udp":true,"network":"ws","ws-path":"/v2ray","ws-headers":{"Host":"sh1.v0.amazonfead.org"},"ws-opts":{"path":"/v2ray","headers":{"Host":"sh1.v0.amazonfead.org"}}}
+  - {"name":"🇯🇵 试用 | 日本 | 01 | 限 20 Mbs","type":"vmess","server":"sh2.v0.amazonfead.org","port":10002,"uuid":"64467a80-08ec-3b2c-a096-71ed64473a4f","alterId":0,"cipher":"auto","udp":true,"network":"ws","ws-path":"/v2ray","ws-headers":{"Host":"sh2.v0.amazonfead.org"},"ws-opts":{"path":"/v2ray","headers":{"Host":"sh2.v0.amazonfead.org"}}}
+  - {"name":"🇯🇵 试用 | 日本 | 02 | 限 20 Mbs","type":"vmess","server":"sh2.v0.amazonfead.org","port":10003,"uuid":"64467a80-08ec-3b2c-a096-71ed64473a4f","alterId":0,"cipher":"auto","udp":true,"network":"ws","ws-path":"/v2ray","ws-headers":{"Host":"sh2.v0.amazonfead.org"},"ws-opts":{"path":"/v2ray","headers":{"Host":"sh2.v0.amazonfead.org"}}}
 
 proxy-groups:
 -
   name: Proxy
   type: select
   proxies:
-    - '🇭🇰 香港 | 01 | U1'
-    - '🇭🇰 香港 | 02 | U4'
-    - '🇭🇰 香港 | 03 | U1'
-    - '🇭🇰 香港 | 04 | T3'
-    - '🇭🇰 香港 | 05 | U4'
-    - '🇭🇰 香港 | 06 | T3'
-    - '🇭🇰 香港 | 07 | T1'
-    - '🇭🇰 香港 | 08 | T1'
+    - '🇭🇰 香港 | V1 | 01'
+    - '🇭🇰 香港 | V1 | 02'
+    - '🇭🇰 香港 | V1 | 03'
+    - '🇭🇰 香港 | V1 | 04'
+    - '🇭🇰 香港 | V1 | 05'
+    - '🇭🇰 香港 | V1 | 06'
+    - '🇭🇰 香港 | V1 | 07'
+    - '🇭🇰 香港 | V1 | 08'
     - '🇨🇳 台湾 | V1 | 01'
     - "🇨🇳 台湾 | V1 | 02\t"
-    - '🇯🇵 日本 | 01 | T3'
-    - '🇯🇵 日本 | 02 | U1'
-    - '🇯🇵 日本 | 03 | T3'
-    - '🇯🇵 日本 | 04 | U4'
-    - '🇯🇵 日本 | 05 | U4'
-    - '🇸🇬 狮城 | 01 | U1'
-    - '🇸🇬 狮城 | 02 | U4'
-    - '🇸🇬 狮城 | 03 | T3'
-    - '🇸🇬 狮城 | 04 | T3'
-    - '🇺🇲 美国 | 01 | T3'
-    - '🇺🇲 美国 | 02 | U1'
-    - '🇺🇲 美国 | 03 | T1'
-    - '🇺🇲 美国 | 04 | U4'
-    - '🇰🇷 韩国 | 01 | T3'
-    - '🇰🇷 韩国 | 02 | U4'
-    - '🇷🇺 俄罗斯 | 1 | U2'
-    - '🇵🇭 菲律宾 | 1 | T2'
-    - '🇮🇳 印度 | 01 | U4'
-    - '🇹🇭 泰国 | 01 | T1'
-    - '🇬🇧 英国 | 01 | T1'
-    - '🇩🇪 德国 | 01 | U2'
-    - '🇨🇦 加拿大 | 1 | U4'
-    - '🇦🇺 澳洲 | 01 | U4'
-    - '🇵🇰 巴基斯坦 | 01 | U4'
-    - '🇨🇱 智利  | 01 | U4'
-    - '🇹🇷 土耳其 | 1 | U4'
-    - '🇧🇷 巴西 | 01 | T1'
-    - '🇦🇷 阿根廷 | 1 | T2'
+    - '🇯🇵 日本 | V1 | 01'
+    - '🇯🇵 日本 | V1 | 02'
+    - '🇯🇵 日本 | V1 | 03'
+    - '🇯🇵 日本 | V1 | 04'
+    - '🇯🇵 日本 | V1 | 05'
+    - '🇸🇬 新加坡 | V1 | 01'
+    - '🇸🇬 新加坡 | V1 | 02'
+    - '🇸🇬 新加坡 | V1 | 03'
+    - '🇸🇬 新加坡 | V1 | 04'
+    - '🇺🇲 美国 | V1 | 01'
+    - '🇺🇲 美国 | V1 | 02'
+    - '🇺🇲 美国 | V1 | 03'
+    - '🇺🇲 美国 | V1 | 04'
+    - '🇰🇷 韩国 | V1 | 01'
+    - '🇰🇷 韩国 | V1 | 02'
+    - '🇷🇺 俄罗斯 | V1 | 01'
+    - '🇵🇭 菲律宾 | V1 | 01'
+    - '🇮🇳 印度 | V1 | 01'
+    - '🇹🇭 泰国 | V1 | 01'
+    - '🇬🇧 英国 | V1 | 01'
+    - '🇩🇪 德国 | V1 | 01'
+    - '🇨🇦 加拿大 | V1 | 01'
+    - '🇦🇺 澳大利亚 | V1 | 01'
+    - '🇵🇰 巴基斯坦 | V1 | 01'
+    - '🇨🇱 智利  | V1 | 01'
+    - '🇹🇷 土耳其 | V1 | 01'
+    - '🇧🇷 巴西 | V1 | 01'
+    - '🇦🇷 阿根廷 | V1 | 01'
+    - '🇸🇬 试用 | 新加坡 | 01 | 限 20 Mbs'
+    - '🇸🇬 试用 | 新加坡 | 02 | 限 20 Mbs'
+    - '🇯🇵 试用 | 日本 | 01 | 限 20 Mbs'
+    - '🇯🇵 试用 | 日本 | 02 | 限 20 Mbs'
 -
   name: Domestic
   type: select
@@ -594,7 +602,6 @@ rules:
 - DOMAIN-SUFFIX,hkgolden.com,Proxy
 - DOMAIN-SUFFIX,hootsuite.com,Proxy
 - DOMAIN-SUFFIX,hudson.org,Proxy
-- DOMAIN-SUFFIX,huobi.pro,Proxy
 - DOMAIN-SUFFIX,initiummall.com,Proxy
 - DOMAIN-SUFFIX,ipfs.io,Proxy
 - DOMAIN-SUFFIX,issuu.com,Proxy
@@ -863,20 +870,54 @@ rules:
 - DOMAIN-SUFFIX,wolframalpha.com,Proxy
 - DOMAIN-SUFFIX,x-art.com,Proxy
 - DOMAIN-SUFFIX,yimg.com,Proxy
-# socloud
+# Socloud
 - DOMAIN-SUFFIX,socloud.fun,Proxy
 - DOMAIN-SUFFIX,socloud.me,Proxy
 - DOMAIN-SUFFIX,emby.run,GlobalTV
-- DOMAIN-SUFFIX,lala.im,Proxy
 - DOMAIN-SUFFIX,v2ex.com,Proxy
-- DOMAIN-SUFFIX,sknetpay.com,Proxy
 - DOMAIN-SUFFIX,roku.com,GlobalTV
-# binance
-- DOMAIN-SUFFIX,binance.com,Proxy
+- DOMAIN-SUFFIX,linkedin.com,Proxy
+- DOMAIN-SUFFIX,bscscan.com,Proxy
+- DOMAIN-SUFFIX,etherscan.io,Proxy
+# Binance
+- DOMAIN-SUFFIX,binance.cc,Proxy
+- DOMAIN-SUFFIX,binance.charity,Proxy
 - DOMAIN-SUFFIX,binance.cloud,Proxy
+- DOMAIN-SUFFIX,binance.co,Proxy
+- DOMAIN-SUFFIX,binance.com,Proxy
+- DOMAIN-SUFFIX,binance.info,Proxy
 - DOMAIN-SUFFIX,binance.me,Proxy
+- DOMAIN-SUFFIX,binance.net,Proxy
+- DOMAIN-SUFFIX,binance.org,Proxy
+- DOMAIN-SUFFIX,binance.us,Proxy
+- DOMAIN-SUFFIX,binance.vision,Proxy
+- DOMAIN-SUFFIX,binancezh.be,Proxy
+- DOMAIN-SUFFIX,binancezh.biz,Proxy
+- DOMAIN-SUFFIX,binancezh.cc,Proxy
+- DOMAIN-SUFFIX,binancezh.co,Proxy
+- DOMAIN-SUFFIX,binancezh.com,Proxy
+- DOMAIN-SUFFIX,binancezh.info,Proxy
+- DOMAIN-SUFFIX,binancezh.ink,Proxy
+- DOMAIN-SUFFIX,binancezh.kim,Proxy
+- DOMAIN-SUFFIX,binancezh.link,Proxy
+- DOMAIN-SUFFIX,binancezh.live,Proxy
+- DOMAIN-SUFFIX,binancezh.mobi,Proxy
+- DOMAIN-SUFFIX,binancezh.net,Proxy
+- DOMAIN-SUFFIX,binancezh.pro,Proxy
+- DOMAIN-SUFFIX,binancezh.sh,Proxy
+- DOMAIN-SUFFIX,binancezh.top,Proxy
+- DOMAIN-SUFFIX,binanceapi.com,Proxy
 - DOMAIN-SUFFIX,bnbstatic.com,Proxy
-- DOMAIN-SUFFIX,binance.im,Proxy
+# Huobi
+- DOMAIN-SUFFIX,hbabit.com,Proxy
+- DOMAIN-SUFFIX,hbfile.net,Proxy
+- DOMAIN-SUFFIX,huobi.com,Proxy
+- DOMAIN-SUFFIX,huobi.me,Proxy
+- DOMAIN-SUFFIX,huobi.pro,Proxy
+- DOMAIN-SUFFIX,huobi.sc,Proxy
+- DOMAIN-SUFFIX,huobiasia.vip,Proxy
+- DOMAIN-SUFFIX,huobigroup.com,Proxy
+- DOMAIN-SUFFIX,huobitoken.com,Proxy
 
 # Local Area Network
 - DOMAIN-KEYWORD,announce,DIRECT

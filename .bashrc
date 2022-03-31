@@ -24,4 +24,3 @@ alias hostname='hostnamectl hostname'
 PS1='\$ '
 
 # env
-. "$HOME/.cargo/env"

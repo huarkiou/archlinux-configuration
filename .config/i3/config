@@ -218,7 +218,7 @@ exec_always --no-startup-id ~/.config/polybar/launch.sh
 # 输入法
 exec_always --no-startup-id fcitx5
 # 设置背景图片
-exec --no-startup-id feh --bg-fill ~/Pictures/wallpaper/bachongshenzi.jpg
+exec --no-startup-id feh --bg-fill ~/Pictures/tuanzi.png
 # 关闭屏保
 exec --no-startup-id xset s off
 # 按键重复速度及延迟
@@ -230,5 +230,5 @@ exec --no-startup-id flameshot
 # proxy
 exec --no-startup-id ~/.config/clash/launch.sh
 # 词典
-exec --no-startup-id goldendict
+#exec --no-startup-id goldendict
 
