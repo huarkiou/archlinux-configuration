@@ -19,8 +19,12 @@ alias l='ls --color=auto -al'
 alias ll='ls --color=auto -l'
 alias la='ls --color=auto -a'
 alias hostname='hostnamectl hostname'
+alias matlab='matlab -nodesktop -nosplash'
 
 # prompt
 PS1='\$ '
 
 # env
+export GOPROXY=https://goproxy.cn,direct
+export PATH="$(yarn global bin):$PATH"
+

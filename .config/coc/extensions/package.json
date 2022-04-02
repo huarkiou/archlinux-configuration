@@ -1,0 +1,15 @@
+{
+  "dependencies": {
+    "coc-clang-format-style-options": ">=0.0.5",
+    "coc-clangd": ">=0.21.3",
+    "coc-cmake": ">=0.2.1",
+    "coc-diagnostic": ">=0.23.2",
+    "coc-jedi": ">=0.30.1",
+    "coc-json": ">=1.4.1",
+    "coc-markdown-preview-enhanced": ">=0.4.3",
+    "coc-markdownlint": ">=1.12.4",
+    "coc-pairs": ">=1.3.2",
+    "coc-sh": ">=0.6.1",
+    "coc-webview": ">=0.11.0"
+  }
+}

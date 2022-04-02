@@ -1,0 +1,100 @@
+{
+  "languageserver": {
+    "bash": {
+      "command": "bash-language-server",
+      "args": ["start"],
+      "filetypes": ["sh"],
+      "ignoredRootPaths": ["~"]
+    }
+  },
+  "jedi.enable": true,
+  "jedi.startupMessage": false,
+  "jedi.markupKindPreferred": "plaintext",
+  "jedi.trace.server": "off",
+  "jedi.jediSettings.autoImportModules": ["numpy", "pandas", "matplotlib"],
+  "jedi.jediSettings.caseInsensitiveCompletion": true,
+  "jedi.jediSettings.debug": false,
+  "jedi.executable.command": "jedi-language-server",
+  "jedi.executable.args": [],
+  "jedi.codeAction.nameExtractFunction": "jls_extract_def",
+  "jedi.codeAction.nameExtractVariable": "jls_extract_var",
+  "jedi.completion.disableSnippets": false,
+  "jedi.completion.resolveEagerly": false,
+  "jedi.completion.ignorePatterns": [],
+  "jedi.diagnostics.enable": true,
+  "jedi.diagnostics.didOpen": true,
+  "jedi.diagnostics.didChange": true,
+  "jedi.diagnostics.didSave": true,
+  "jedi.hover.enable": true,
+  "jedi.hover.disable.keyword.all": false,
+  "jedi.hover.disable.keyword.names": [],
+  "jedi.hover.disable.keyword.fullNames": [],
+  "jedi.workspace.extraPaths": [],
+  "jedi.workspace.symbols.maxSymbols": 20,
+  "jedi.workspace.symbols.ignoreFolders": [
+    ".nox",
+    ".tox",
+    ".venv",
+    "__pycache__",
+    "venv",
+    ".git"
+  ],
+  "diagnostic-languageserver.filetypes": {
+    "python": "pylint"
+  },
+  "diagnostic-languageserver.linters": {
+    "pylint": {
+      "sourceName": "pylint",
+      "command": "pylint",
+      "debounce": 100,
+      "args": [
+        "--output-format",
+        "text",
+        "--score",
+        "no",
+        "--msg-template",
+        "'{line}:{column}:{category}:{msg} ({msg_id}:{symbol})'",
+        "%file"
+      ],
+      "formatPattern": [
+        "^(\\d+?):(\\d+?):([a-z]+?):(.*)$",
+        {
+          "line": 1,
+          "column": 2,
+          "endColumn": 2,
+          "security": 3,
+          "message": 4
+        }
+      ],
+      "rootPatterns": ["pyproject.toml", "setup.py", ".git"],
+      "securities": {
+        "informational": "hint",
+        "refactor": "info",
+        "convention": "info",
+        "warning": "warning",
+        "error": "error",
+        "fatal": "error"
+      },
+      "offsetColumn": 1,
+      "offsetColumnEnd": 1,
+      "formatLines": 1
+    }
+  },
+  "diagnostic-languageserver.formatFiletypes": {
+    "python": ["black", "isort", "docformatter"]
+  },
+  "diagnostic-languageserver.formatters": {
+    "black": {
+      "command": "black",
+      "args": ["-q", "-"]
+    },
+    "isort": {
+      "command": "isort",
+      "args": ["-q", "-"]
+    },
+    "docformatter": {
+      "command": "docformatter",
+      "args": ["-"]
+    }
+  }
+}
