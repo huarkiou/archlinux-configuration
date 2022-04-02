@@ -72,7 +72,7 @@ font-3 = fixed:pixelsize=10;1
 
 modules-left = i3
 modules-center = xwindow
-modules-right = pulseaudio battery date powermenu
+modules-right = xbacklight pulseaudio battery date powermenu
 
 
 tray-position = right
