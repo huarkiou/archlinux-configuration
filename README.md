@@ -15,6 +15,11 @@ sudo pacman -S neovim python-pynvim neovim-plug neovim-symlinks
 sudo pacman -S btop neofetch clash flameshot
 # statusbar
 yay -S polybar 
+# musice player
+sudo pacman -S mpd ncmpcpp
+systemctl enable mpd --user
+# rust
+sudo pacman -S rust rust-analyzer
 
 ```
 3. Copy
