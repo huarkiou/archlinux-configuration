@@ -187,6 +187,10 @@ label-urgent-padding = 1
 type = internal/mpd
 format-online = <label-song>  <icon-prev> <icon-stop> <toggle> <icon-next>
 
+host = /home/huarkiou/.config/mpd/socket
+;port = 6600
+;password =
+
 icon-prev = <
 icon-stop = 口
 icon-play = P
